@@ -1,0 +1,142 @@
+.container{
+
+}
+.square{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.square1{
+    background-color: blue;
+    transition: transform 0.5s ease;
+}
+.square2{
+    background-color:red;
+    transition: transform 0.5s ease-in;
+}
+.square3{
+    background-color:orange;
+    transition: transform 0.5s ease-in-out;
+}
+.square4{
+    background-color:green;
+    transition: transform 0.5s ease-out;
+}
+.square5{
+    background-color: black;
+    transition: transform 0.5s ease-linear;
+}
+.container:hover .square{
+    transform: translateX(500px);
+}
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid blue;
+    background-color: black;
+    transition: border-colour 0.5s ease-in;
+
+}
+.circle:hover{
+    border-color: aliceblue;
+}
+.rectangle{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+    margin: 0 40px;
+    transition: transform 1s ease-in-out;
+}
+.container1{
+    margin-top: 100px;
+}
+.rectangle1:hover{
+    transform: rotate(90deg);
+}
+.rectangle2:hover{
+    transform: rotate(1000deg);
+}
+.rectangle3:hover{
+    transform: skew(-200deg);
+}
+.rectangle4:hover{
+    transform: skew(-200deg);
+}
+.rectangle5:hover{
+    transform: skew(-200deg);
+}
+.rectangle6:hover{
+    transform: skew(-200deg);
+}
+.squarenew{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color:green;
+    margin: 20px;
+    transition: transform 1s ease-in-out;
+
+}
+.square6:hover{
+    transform: scaleX(2);
+}
+.square7:hover{
+    transform: scaleX(0.5);
+}
+.square8:hover{
+    transform: scaleX(1.5);
+}
+.container2 div{
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+    background-image: repeating-linear-gradient(
+        60deg,
+        blue,
+        black 10px,
+        red 30px,
+        pink 50px
+    );
+    transition:all 2s ease-in-out;
+}
+.container2 div:hover{
+    background-image: linear-gradient(
+        10deg,
+        aqua,
+        white,
+        red,
+        yellow
+
+    );
+    transform: rotate(-1000deg) skew(15deg) scale(0.7);
+    margin-left: 500px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin-top: 50px;
+    animation: drop-in 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide-in{
+    from {
+        transform: translateX(-100px);
+
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+@keyframes drop-in{
+    from {
+        transform: rotate(-30px) translateY(-100%);
+
+    }
+    to {
+        transform:  rotate(0deg) translateX(0%);
+    }
+}
